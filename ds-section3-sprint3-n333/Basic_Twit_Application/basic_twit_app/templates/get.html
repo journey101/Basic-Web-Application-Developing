@@ -16,15 +16,19 @@ Welcome!
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">id</th>
-      <th scope="col">tweet</th>
+      <th scope="col">#</th>
+      <th scope="col">Username</th>
+      <th scope="col">Full_name</th>
+      <th scope="col">Followers</th>
     </tr>
   </thead>
   <tbody>
     {% for data in data %}
     <tr>
-      <td scope="row">{{ data.id }}</td>
-       <td>{{ data.text }}</td>
+      <th scope="row">{{ data.id }}</th>
+      <td>{{ data.username }}</td>
+      <td>{{ data.full_name }}</td>
+      <td>{{ data.followers }}</td>
     </tr>
     {% endfor %}
   </tbody>

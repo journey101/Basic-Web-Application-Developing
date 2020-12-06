@@ -1,6 +1,7 @@
 from flask import jsonify
 from flask import Blueprint, render_template, request
 from basic_twit_app.models import Tweet, Users
+from basic_twit_app.API.twitter_api import twitter_api # pylint: disable=import-error
 
 
 get_routes = Blueprint('get_routes', __name__)

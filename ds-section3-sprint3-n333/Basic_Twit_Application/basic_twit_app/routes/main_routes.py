@@ -1,6 +1,6 @@
-from flask import jsonify
 from flask import Blueprint, render_template
-from basic_twit_app.models import Users, parse_records
+from basic_twit_app.models import Users, db
+from basic_twit_app.API.twitter_api import twitter_api # pylint: disable=import-error
 
 main_routes = Blueprint('main_routes', __name__)
 
@@ -9,10 +9,9 @@ main_routes = Blueprint('main_routes', __name__)
 def index():
     return render_template("index.html")
 
-# '/menu.json
-@main_routes.route('/menu.json')
-def json_data():
-    raw_data = Users.query.all()
-    parsed_data = parse_records(raw_data)
-
-    return jsonify(parsed_data)
+# '/reset'
+@main_routes.route('/reset')
+def reset_db():
+    db.drop_all()
+    db.create_all()
+    return 'DB refreshed!'

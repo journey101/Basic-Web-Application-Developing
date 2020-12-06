@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "../../reference_code"
+			"path": "../.."
 		},
 		{
-			"path": "../.."
+			"path": "../../.."
 		}
 	],
 	"settings": {}

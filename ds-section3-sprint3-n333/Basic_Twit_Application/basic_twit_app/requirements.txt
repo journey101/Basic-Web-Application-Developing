@@ -44,3 +44,4 @@ watchdog==0.10.3
 webencodings==0.5.1
 Werkzeug==1.0.1
 WTForms==2.3.3
+embedding-as-service==1.0.0

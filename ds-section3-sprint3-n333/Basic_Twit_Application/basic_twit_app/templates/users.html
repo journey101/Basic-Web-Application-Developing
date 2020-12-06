@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-
 {% block title  %}
 Basic Twit Application
 {% endblock  %}
@@ -13,8 +12,11 @@ Post and share Twiter Users' tweets
 {% block main_body  %}
 Welcome!
 {% if data %}
+
+<form method="POST" action="/users">
+
 <table class="table">
-  <thead>
+  <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Username</th>
@@ -34,4 +36,37 @@ Welcome!
   </tbody>
 </table>
 {% endif %}
+
+
+
+<p>
+<h2>Tweet 확인하기</h2>
+<h3> 
+username을 입력 
+(대소문자 정확히 구분)
+</h3>
+</p>
+
+{% if tweet_data %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for tweet_data in tweet_data %}
+    <tr>
+      <td scope="row">{{ tweet_data }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+<form method="POST" action="/users">
+  <input name="username" class="form-control" type="text" placeholder="Username">
+  <input type="submit" class="btn btn-primary" value="View" />
+</form>
+
 {% endblock  %}

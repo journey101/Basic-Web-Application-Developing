@@ -1,0 +1,50 @@
+
+{% extends 'base.html' %}
+
+{% block title  %}
+Analytics
+{% if message %}
+{{ message }}
+{% endif %}
+{% endblock  %}
+
+{% block lead  %}
+키워드에 맞는 관심그룹 예측하기
+{% endblock  %}
+
+{% block main_body  %}
+<p>
+<span style = " font-size:1.5em;  color: green;">
+분석할 키워드를 입력하세요.<br>
+</span>
+</p>
+<p>
+<span style = " font-size:1.0em;  color: green;">
+Class1, 2에는 예측하고자 하는 Username을 입력하세요.
+</span>
+</p>
+
+<form method="POST" action="/analytics">
+  <input name="text" class="form-control" type="text" placeholder="Sentences">
+  <input name="User1" class="form-control" type="text" placeholder="Class1">
+  <input name="User2" class="form-control" type="text" placeholder="Class2">
+  <input type="submit" class="btn btn-primary" value="Analyze" />
+  
+{% if prediction %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">prediction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{ prediction }}</th>
+    </tr>
+  </tbody>
+</table>
+{% endif %}
+
+</form>
+
+{% endblock  %}
