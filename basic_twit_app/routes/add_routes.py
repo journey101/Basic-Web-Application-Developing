@@ -31,7 +31,7 @@ def add_twit_user():
 		db_users.username = users.screen_name
 		db_users.full_name = users.name
 		db_users.followers = users.followers_count
-
+							
 		db.session.add(db_users)
 		print('Users')
 		
@@ -59,4 +59,4 @@ def add_twit_user():
 			db.session.commit()
 
 	
-	return render_template('add_routesdd.html')
+	return render_template('add_routesdd.html')	
