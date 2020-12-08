@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../reference_code/Coffee Application/coffee_app"
+		},
+		{
+			"path": "../../reference_code"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

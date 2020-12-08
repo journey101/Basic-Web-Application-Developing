@@ -1,0 +1,13 @@
+// settings.json
+{
+    "python.pythonPath": "/opt/anaconda3/bin/python",
+      "python.linting.pylintEnabled": true,
+      "python.linting.enabled": true,
+      "python.linting.pylintPath": "/opt/anaconda3/bin/pylint",
+      "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+      ]
+    }
+
+    
