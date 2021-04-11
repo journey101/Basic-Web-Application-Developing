@@ -53,4 +53,4 @@
 > 
 
 ### 4. 웹 배포 링크 
-https://basictwitapp.herokuapp.com/delete
+https://basictwitapp.herokuapp.com/
