@@ -1,4 +1,4 @@
-# ds-sc3-project
+# ds-sc3-basic-web-application-developing
 section3-project
 
 ※ 프로젝트 설명
