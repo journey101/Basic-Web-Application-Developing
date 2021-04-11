@@ -1,9 +1,9 @@
 # ds-sc3-basic-web-application-developing
-section3-project
 
 ※ 프로젝트 배경
  본 프로젝트는 코드스테이츠 데이터사이언스(1기) 과정의 섹션3(데이터엔지니어링-웹애플리케이션) 4주차에 진행한 과제입니다. 
 
+---
 ### 1. 서비스 기획의도
  twitter 유저들의 텍스트 데이터를 머신러닝 예측모델(RandomForest)을 활용해 분석, 특정 키워드별로 적합한 브랜드명을 예측해주는 서비스를 의도하였습니다. 
 
@@ -16,7 +16,7 @@ section3-project
 ### 3. 프로젝트 과정 중 겪은 에러 및 해결과정
  본 프로젝트를 수행하며 가장 크게 겪은 에러는 아래 3가지로 요약할 수 있습니다.
  
-1) 주요 에러1 — Internal Server Error 400번대 에러
+#### 1) 주요 에러1 — Internal Server Error 400번대 에러
 
 -- 해결과정 --
  
@@ -30,8 +30,7 @@ section3-project
  - html파일의 jinja코드 사용시 variable 사용법을 몰라서 연결해야 할 파이썬 파일의 variable 명칭과 다르게 입력한 것을 발견하여 수정. jinja document를 들어가서 이해하며 해결. 
 > (결과) 기획했던 html 웹 페이지 정상적으로 구현.  
  
- 
-2) 주요 에러2 — SQLAlchemy와 DB 연결관련 에러
+#### 2) 주요 에러2 — SQLAlchemy와 DB 연결관련 에러
 
 -- 해결과정 --
 
@@ -41,8 +40,7 @@ section3-project
 >
 > (결과) 트위터 api에서 가져온 트윗계정명과 트윗텍스트 데이터를 db에 저장하는 기능 성공. 
  
-
-3) 주요 에러3 —기능 구현을 위한 for문, if문, class 등 코드 설계 상의 에러.
+#### 3) 주요 에러3 —기능 구현을 위한 for문, if문, class 등 코드 설계 상의 에러.
  
 -- 해결과정 --
 
